@@ -6,3 +6,5 @@ Repository della documentazione del **gruppo 18: Lord of the Strings**, per il c
 - **Template**: template utili a mantenere lo stesso layout nei documenti di progetto.
 - **Glossario**: contiene il glossario, che raccoglie termini usati internamente al progetto, associati alla loro definizione.
 - **Risorse**: immagini e risorse necessarie ai documenti.
+- **Verbali interni**: verbali delle riunioni fra i membri del gruppo.
+- **Verbali esterni**: verbali delle riunioni con entità esterne al gruppo.

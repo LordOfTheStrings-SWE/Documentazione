@@ -1,0 +1,143 @@
+\documentclass[a4paper, 11pt]{article}
+
+% Pacchetti fondamentali per codifica, lingua e margini
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[italian]{babel}
+\usepackage[margin=2.5cm]{geometry}
+
+% Font simile a quello del PDF originale (Times/Liberation Serif)
+\usepackage{tgtermes}
+
+% Pacchetti per immagini, colori e tabelle
+\usepackage{graphicx}
+\usepackage[table]{xcolor}
+\usepackage{array}
+\usepackage{tabularx}
+
+% Pacchetti per la formattazione dei paragrafi, titoli e indice
+\usepackage[parfill]{parskip}
+\usepackage{titlesec}
+\usepackage{tocloft}
+\usepackage[hidelinks]{hyperref}
+
+% Definizione del colore rosso UniPD
+\definecolor{unipdred}{RGB}{155, 0, 20}
+
+% Formattazione personalizzata per i sottoparagrafi (2.1, 2.2, ecc.)
+\titleformat{\subsection}
+  {\normalfont\normalsize\bfseries}{\thesubsection}{0.5em}{}
+\titlespacing*{\subsection}{0pt}{1.5ex plus 0.5ex minus .2ex}{0.2ex}
+
+% Configurazione dei puntini nell'indice anche per le sezioni principali
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+\renewcommand{\cftsecfont}{\normalfont}
+\renewcommand{\cftsecpagefont}{\normalfont}
+
+\begin{document}
+
+%INTESTAZIONE COHI LOGHI
+\noindent
+\begin{minipage}[c]{0.48\textwidth}
+    \begin{tabular}{@{}m{2.6cm} m{5cm}@{}}
+        % aggiungere immagine
+        \includegraphics[width=2.4cm]{logo_unipd.png} & 
+        \textcolor{unipdred}{
+            Università di Padova \newline
+            Corso di \newline
+            Ingegneria del Software \newline
+            A.A. 2026/2027 
+        }
+    \end{tabular}
+\end{minipage}
+\hfill
+\begin{minipage}[c]{0.48\textwidth}
+    \begin{tabular}{@{}m{2.4cm} m{5.5cm}@{}}
+        % aggiungere immagine
+        \includegraphics[width=2.2cm]{logo_gruppo.jpeg} & 
+\begin{figure}
+            \centering
+            \includegraphics[width=0.5\linewidth]{logo_unipd.png}
+            \caption{Enter Caption}
+\begin{figure}
+                \centering
+                \includegraphics[width=0.5\linewidth]{logo_gruppo.jpeg}
+                \caption{Enter Caption}
+                \label{fig:placeholder}
+            \end{figure}
+                        \label{fig:placeholder}
+        \end{figure}
+                Gruppo 18 \newline
+        The Lord of the Strings \newline
+        thelordofthestrings@gmail.com
+    \end{tabular}
+\end{minipage}
+
+\vspace{3cm}
+
+%TITOLO DEL DOCUMENTO
+{\LARGE Verbale interno della riunione in data 2000/01/01\par}
+
+\vspace{1.8cm}
+
+%INDICE
+
+\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{1}Informazioni generali}
+
+\tableofcontents
+
+\vspace{1cm}
+
+%DATI E STORICO MODIFICHE
+\textbf{Redatto da: Pinco Palla}
+
+\vspace{0.4cm}
+
+\textbf{Storico modifiche}
+
+\vspace{-0.2cm}
+\noindent
+\renewcommand{\arraystretch}{1.3}
+\begin{tabularx}{\textwidth}{|X|X|X|X|}
+    \hline
+    \rowcolor{gray!35}
+    Versione & Data & Descrizione & Autore \\
+    \hline
+    1.0.0 & 2000/01/01 & Aggiungi & Pinco Palla \\
+    \hline
+\end{tabularx}
+
+%SECONDA PAGINA
+\newpage
+
+% Imposta il contatore alla sezione 2 per generare 2.1, 2.2, 2.3.
+
+\setcounter{section}{2}
+\addcontentsline{toc}{section}{\protect\numberline{2}}
+
+\subsection{Durata e partecipanti}
+Ora: 00:00 – 00:00 \\
+Partecipanti:
+\begin{itemize}\setlength\itemsep{0em}
+    \item Giovanni Biba
+    \item Giacomo De Lucchi
+    \item Costanza Gyulai
+    \item Michele Moro
+    \item Stefano Sironi
+    \item Angelo Tuoni
+    \item Yi Ming Ye
+\end{itemize}
+Mezzo: Discord
+
+\vspace{0.4cm}
+
+\subsection{Sintesi}
+Breve resoconto di cosa è stato detto e deciso.
+
+\vspace{0.4cm}
+
+\subsection{Obbiettivi fissati}
+Breve descrizione di cosa è stato deciso e stabilito
+
+\end{document}

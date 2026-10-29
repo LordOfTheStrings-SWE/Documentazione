@@ -7,7 +7,7 @@ Sito di presentazione: https://lordofthestrings-swe.github.io/Documentazione/
 - **Risorse**: cartella contenente la documentazione esposta tramite il sito
 - **Candidatura**: documenti creati nella fase iniziale del progetto, pre-candidatura di scelta capitolato.
 
-##Struttura delle cartelle principali
+## Struttura delle cartelle principali
 ```
 ├── Documentazione/
 │   ├── Risorse/
